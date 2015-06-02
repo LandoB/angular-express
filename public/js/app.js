@@ -22,6 +22,14 @@ config(function ($routeProvider, $locationProvider) {
       templateUrl: 'partials/register',
       controller: 'RegisterController'
     }).
+    when('/todo', {
+      templateUrl: 'partials/todo',
+      controller: 'TodoController'
+    }).
+    when('/todoList', {
+      templateUrl: 'partials/todoList',
+      controller: 'TodoListController'
+    }).
     otherwise({
       redirectTo: '/login'
     });

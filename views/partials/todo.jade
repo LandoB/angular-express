@@ -1,1 +1,17 @@
-p This is where the to do task will be added - create a new todo-task.
+h1 Create a task
+	form#todoForm
+		input(type='hidden', name='db_id', value='<%= todo._id %>')
+		.formfield
+			.formfield--prompt Title:
+			input#todoTitle(type='text', name='title', value='Enter Title', placeholder='Enter Title', required='')
+		.formfield
+			div
+				| Description:
+				input#todoDescription(type='textarea', name='description', placeholder='Enter Description', required='')
+		.formfield
+			.formfield--prompt Priority (1-100):
+			input#todoPriority(type='text', name='priority', value='100', required='')
+		.formfield
+			.formfield--prompt Complete by:
+			input#todoDuedate(type='text', name='due_date', value='mm/dd/yyyy', required='')
+		input.submitButton(type='submit')

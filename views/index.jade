@@ -6,13 +6,16 @@ block body
 			| to your To Do App
 		ul.menu
 			li
-				a(href='login') login &nbsp
+				a(href='login') &nbsp login &nbsp
 			li
-				a(href='register') &nbsp register
-
+				a(href='register') &nbsp register &nbsp
+			li
+				a(href='todo') &nbsp create task &nbsp
+			li
+				a(href='todoList') &nbsp show tasks &nbsp
 		div(ng-view)
 
-		div
+		div.version
 			| To Do app: v
 			span(app-version)
 

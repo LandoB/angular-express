@@ -1,2 +1,14 @@
-h1 Hello user {{name}}
-p This is where the to do task will show.
+h1 {{name}}
+
+
+h2 You have {{tasks.length}} things to do!
+.things
+	.justOne(ng-repeat="task in tasks")
+		ul.menu
+			li
+				h5 {{ task }}
+
+	table.table
+		tr
+			td Task_Name
+			td Completed?
