@@ -23,7 +23,7 @@ config(function ($routeProvider, $locationProvider) {
       controller: 'RegisterController'
     }).
     otherwise({
-      redirectTo: '/'
+      redirectTo: '/login'
     });
 
   $locationProvider.html5Mode(true);

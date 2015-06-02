@@ -20,6 +20,7 @@ angular.module('myApp.controllers', []).
   controller('LoginController', function ($scope) {
     // write Ctrl here
 
+
   }).
   controller('RegisterController', function ($scope) {
     // write Ctrl here
